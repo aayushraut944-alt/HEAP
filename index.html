@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HEAP – share rides, split costs, travel greener.">
+  <title>HEAP · Share the ride</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%2310b981'/%3E%3Ccircle cx='20' cy='13' r='4.5' fill='white'/%3E%3Ccircle cx='12.5' cy='25' r='4.5' fill='white'/%3E%3Ccircle cx='27.5' cy='25' r='4.5' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header id="nav" class="navbar"></header>
+  <main id="app"></main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>HEAP</strong> <span class="muted">· Share the ride. Split the cost.</span></div>
+      <small class="muted">© <span id="footer-year"></span> HEAP Carpooling · Demo project (data stored in your browser)</small>
+    </div>
+  </footer>
+
+  <datalist id="cities"></datalist>
+  <div id="modal-root"></div>
+  <div id="toasts" aria-live="polite"></div>
+
+  <!-- Order matters: utils → seed → store → ui → views → app -->
+  <script src="./utils.js"></script>
+  <script src="./seed.js"></script>
+  <script src="./store.js"></script>
+  <script src="./ui.js"></script>
+  <script src="./home.js"></script>
+  <script src="./search.js"></script>
+  <script src="./offer.js"></script>
+  <script src="./trips.js"></script>
+  <script src="./profile.js"></script>
+  <script src="./auth.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
